@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 body::-webkit-scrollbar {
     width: 12px;
-}
+  }
   
-body::-webkit-scrollbar-track {
-  background: #0F172A;        /* the colour of the track zone */
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: rgba(30, 41, 59, 0.4);    /* the slider's colour */
-  border-radius: 20px;       /* the slider's roundness */
-  border: none;
-}
+  body::-webkit-scrollbar-track {
+    background: #0F172A;        /* il colore della zona di tracciato */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(30, 41, 59, 0.4);    /* il colore della barra di scorrimento */
+    border-radius: 20px;       /* la rotondità della barra di scorrimento */
+    border: none;
+  }
 
 
 
@@ -38,6 +38,7 @@ img {
 a {
     text-decoration: none;
     color: inherit;
+    transition: 0.2s;
 }
 
 ul {
@@ -254,22 +255,42 @@ ul {
     background:  rgba(14, 165, 233, 1);
 }
 
-.help_button {
-    border: 1px solid rgba(14, 165, 233, 1);
-    background: #0F172A;
-    border-radius: 10px;
-    margin: 5%;
-    color: rgba(14, 165, 233, 1);
-    padding: 10px;
-    font: inherit;
-    width: 200px;
-    height: 15px;
-    cursor: pointer;
-    transition: 0.2s;
-    display: inline-block;
+
+.main-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.help_button:hover {
-    color: #F8FAFC;
-    background:  rgba(14, 165, 233, 1);
+.login {
+    width: 30%;
+    padding: 50px 30px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(30, 41, 59, 0.4);
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.login label {
+    width: 60%;
+}
+
+
+.reg__link {
+    height: fit-content;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.error {
+    font-size: 10px;
+    color: #fff;
+}
+
+.login__link:hover {
+    color: rgba(14, 165, 233, 1);
 }
