@@ -1,5 +1,5 @@
 # Import
-from flask import Flask, render_template,request, redirect
+from flask import Flask, render_template, request, redirect
 # Collegare la libreria del database
 from flask_sqlalchemy import SQLAlchemy
 
